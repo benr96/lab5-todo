@@ -1,2 +1,16 @@
-update
+<html>
 
+	<head>
+		<title> Update </title>
+	</head>
+
+	<body>
+		<form action="/update-db" method="POST">
+			Enter id of task to update:<input type="number" name="taskID">
+			Enter new title<input type="text" name="taskTitle">
+			Enter new body<input type="text" name="taskBody">
+			Enter new user<input type="text" name="userName">
+			<input type="submit" value="Update">
+		</form> 
+	</body>
+</html>

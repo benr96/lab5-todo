@@ -6,7 +6,12 @@ Label org.label-schema.group="monitoring"
 # Update the sources list
 RUN apt-get update
 # Install Python and Basic Python Tools
-RUN apt-get install -y python3 python3-pip mysql-client libmysqlclient-dev
+RUN apt-get install -y python3 python3-pip mysql-client libmysqlclient-dev 
+
+RUN pip3 install slackclient
+
+RUN pip3 install discord.py
+
 #copy app.py into /app folder 
 ADD /app /app
 
